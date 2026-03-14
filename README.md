@@ -1,6 +1,6 @@
 # AiMadeThisTrashCodeOS
 
-A tiny experimental operating system.
+A tiny experimental operating system to see if AI can make a whole OS.
 
 ## Build locally
 
