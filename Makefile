@@ -8,10 +8,9 @@ all:
 	ld -m elf_i386 -T linker.ld -o build/kernel.bin build/boot.o build/kernel.o
 
 	mkdir -p iso/boot/grub
-	cp build/kernel.bin iso/boot/
-	cp iso/boot/grub/grub.cfg iso/boot/grub/grub.cfg
+	cp build/kernel.bin iso/boot/kernel.bin
 
 	grub-mkrescue -o AiMadeThisTrashCodeOS.iso iso
 
 clean:
-	rm -rf build iso/boot/kernel.bin AiMadeThisTrashCodeOS.iso
+	rm -rf build AiMadeThisTrashCodeOS.iso
